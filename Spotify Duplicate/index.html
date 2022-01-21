@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet" >
+    <title>John's Spotify Duplicate</title>
+    
+</head>
+
+<body>
+    <div id="topDiv">
+        <div id="leftSection">
+            <table id="leftSelection" border="0">
+                <tr>
+                    <td>
+                        <img src="images/more_horiz_white_24dp.svg" alt="3dots">
+                    </td>
+                </tr>
+                <tr id="homeSelect">
+                    <td>
+                        <img src="images/home_white_24dp.svg" alt="house">
+                    </td>
+                    <td>
+                        <p>Home</p>
+                    </td>
+                </tr>
+                <tr id="searchSelect">
+                    <td>
+                        <img src="images/search_white_24dp.svg" alt="magnifying glass">
+                    </td>
+                    <td>
+                        <p>Search</p>
+                    </td>
+                </tr>
+                <tr id="librarySelect">
+                    <td>
+                        <img src="images/library_music_white_24dp.svg" alt="books">
+                    </td>
+                    <td>
+                        <p>Library</p>
+                    </td>
+                </tr>
+                <tr id="creatSelect">
+                    <td>
+                        <img src="images/add_white_24dp.svg" alt="plus">
+                    </td>
+                    <td>
+                        <p>Create Playlists</p>
+                    </td>
+                </tr>
+                <tr id="heartSelect">
+                    <td>
+                        <img src="images/favorite_border_white_24dp.svg" alt="heart">
+                    </td>
+                    <td>
+                        <p>Liked Songs</p>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <ul id="playlistSel">
+                <li class="playlistEntry">Bumps and Grooves</li>
+                <li class="playlistEntry">Jammy Time</li>
+                <li class="playlistEntry">Fish Music</li>
+                <li class="playlistEntry">Dank Drops</li>
+                <li class="playlistEntry">Big Noises and Small Voices</li>
+                <li class="playlistEntry">Shower Essentials</li>
+                <li class="playlistEntry">NYHITD</li>
+                <li class="playlistEntry">NIHIYEWYS</li>
+                <li class="playlistEntry">Example Playlist</li>
+                <li class="playlistEntry">Example Playlist</li>
+                <li class="playlistEntry">Example Playlist</li>
+                <li class="playlistEntry">Example Playlist</li>
+                <li class="playlistEntry">Example Playlist</li>
+                <li class="playlistEntry">Example Playlist</li>
+            </ul>
+        </div>
+        <div id="rightSection">
+            <p style="font-weight: bold; margin: 30px 0 10px 15px;">Friend activity</p>
+            <div class="friendUser">
+                <img class="profilePicture" src="images/Linkhigh.jpg" alt="profilePic">
+                <p class="friendTime colorText">21 hr</p>
+                <div class="friendDetails">
+                    <p><strong>John Smith</strong><br><span class="colorText">No Stress &#183 Vic Sage</span></p>
+                </div>
+                <img class="friendIcon" src="images/album_white_24dp.svg" alt="disk">
+                <p class="friendDetails colorText">Vic Sage</p>
+                
+            </div>
+            <div class="friendUser">
+                <img class="profilePicture" src="images/namionepiece.jpg" alt="profilePic">
+                <p class="friendTime colorText">4 d</p>
+                <div class="friendDetails">
+                    <p><strong>Ana Jones</strong><br><span class="colorText">Honey &#183 Boy Pablo</span></p>
+                </div>
+                <img class="friendIcon" src="images/album_white_24dp.svg" alt="disk">
+                <p class="friendDetails colorText">Boy Pablo</p>
+               
+            </div>
+            <div class="friendUser">
+                <img class="profilePicture" src="images/dexter.jpg" alt="profilePic">
+                <p class="friendTime colorText">6 d</p>
+                <div class="friendDetails">
+                    <p><strong>Joe m</strong><br><span class="colorText">SUVs (Black on Black) &#183 Jack Harlow</span></p>
+                </div>
+                <img class="friendIcon" src="images/album_white_24dp.svg" alt="disk">
+                <p class="friendDetails colorText">Jack Harlow, Pooh Shiesty</p>
+               
+            </div>
+        </div>
+        <div id="midSection">
+            <img id="leftArrow" class="arrow" src="images/play_arrow_white_24dp.svg" id="leftArrow">
+            <img id="rightArrow" class="arrow" src="images/play_arrow_white_24dp.svg" id="rightArrow">
+            <iframe src="https://api.spotify.com" id="midIframe"></iframe>
+            <!-- <script src="https://sdk.scdn.co/spotify-player.js"></script> -->
+            <!-- <script>
+                window.onSpotifyWebPlaybackSDKReady = () => {
+                const userAccessToken = "[access token]";
+                const webPlayback = new Spotify.Player({
+                name: "Spotify Web Playback SDK",
+                getOAuthToken: callback => { callback(userAccessToken)}
+                });
+                webPlayback.connect();
+                };
+            </script> -->
+        </div>
+    </div>
+    <div id="bottomNav">    
+        <div id="botSongInfo">
+            <img id="botImg" src="images/UnderPressureArt.jpg" alt="Under Pressure Album Art">
+            <div id="botSong">
+                <p>Intro <br><span class="artist">Logic</span></p>
+            </div>
+        </div>
+        <div id="volumeOptions">
+            <table id="volumeTable">
+                <tr>
+                    <td>
+                        <img src="images/play_arrow_white_24dp.svg" alt="p">
+                    </td>
+                    <td>
+                        <img src="images/play_arrow_white_24dp.svg" alt="o">
+                    </td>
+                    <td>
+                        <img src="images/play_arrow_white_24dp.svg" alt="s">
+                    </td>
+                    <td>
+                        <hr id="volumeBar">
+                    </td>
+                    <td>
+                        <img src="images/play_arrow_white_24dp.svg" alt="e">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="playOptions">
+            <div id="playOp">
+                <img class="botSVG" src="images/shuffle_white_24dp.svg" alt="shuffle">
+                <img class="botSVG" src="images/skip_previous_white_24dp.svg" alt="previous">
+                <img class="botSVG" src="images/play_arrow_white_24dp.svg" alt="play">
+                <img class="botSVG" src="images/skip_next_white_24dp.svg" alt="next">
+                <img class="botSVG" src="images/repeat_white_24dp.svg" alt="repeat">
+            </div>
+            <div id="playBar">
+                <p class="time1">0:00</p>
+                <hr id="bar">
+                <p class="time2">3:02</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

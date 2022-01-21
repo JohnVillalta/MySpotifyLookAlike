@@ -1,0 +1,249 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+body {
+  font-family: "Urbanist";
+}
+.colorText {
+  color: #aaa;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(114, 114, 114, 0.5);
+}
+::-webkit-scrollbar-track-piece:start {
+  margin-top: 5px;
+}
+::-webkit-scrollbar-track-piece:end {
+  margin-bottom: 5px;
+}
+/* The below css is a wrap for the top 3 divs above the play and pause buttons*/
+#topDiv {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  top: 0px;
+}
+/* The above is the wrap for the three sections below */
+
+/* Below begins all css properties for anything inside the leftmost section, this includes playlists and menus */
+#leftSection {
+  float: left;
+  height: 100%;
+  width: 250px;
+  background-color: #000;
+  color: white;
+}
+#homeSelect {
+  background-color: #282828;
+}
+#leftSelection {
+  width: 100%;
+  height: 300px;
+  border-spacing: 0 0;
+  empty-cells: hide;
+}
+#leftSelection p:hover {
+  color: #aaa;
+  transition-duration: 500ms;
+}
+tr p {
+  font-weight: bold;
+  padding-bottom: 4px;
+  margin-left: -10px;
+}
+tr img {
+  margin-left: 5px;
+}
+#leftSection hr {
+  border: 1px solid #282828;
+  width: 200px;
+  margin-left: 25px;
+}
+#playlistSel {
+  margin: 0px;
+  list-style-type: none;
+  position: absolute;
+  width: 247px;
+  top: 300px;
+  bottom: 0px;
+  overflow-y: scroll;
+  background-attachment: fixed;
+}
+.playlistEntry {
+  margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #aaaaaa;
+}
+.playlistEntry:hover {
+  color: white;
+  transition-duration: 500ms;
+}
+/* This ends the css for the leftmost section above */
+
+/* This is the css for the cetner most section which includes the iframe */
+#midSection {
+  overflow: visible;
+  height: 100%;
+  width: 100%;
+  background-color: #161616;
+}
+.arrow {
+  color: white;
+}
+#leftArrow {
+  position: absolute;
+  left: 275px;
+  top: 15px;
+}
+#rightArrow {
+  position: absolute;
+  left: 320px;
+  top: 15px;
+}
+#midIframe {
+  overflow: visible;
+  display: inline-block;
+  width: 73%;
+  height: 90%;
+}
+/* This ends the css for the center section which includes the iframe */
+
+/* This starts the css for the right section of the top div */
+#rightSection {
+  float: right;
+  height: 100%;
+  width: 250px;
+  background-color: #000;
+  color: white;
+}
+.friendUser {
+  margin: 30px 0 0 15px;
+}
+.profilePicture {
+  margin: 2px 8px 0 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  float: left;
+}
+.friendDetails {
+  font-size: 75%;
+  line-height: 150%;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.friendIcon {
+  width: 15px;
+  float: left;
+  margin: 1px 4px 0px -1px;
+}
+.friendTime {
+  font-size: 70%;
+  float: right;
+  margin-right: 10px;
+}
+/* This ends the css for the rightmost section */
+
+/* The below css edits the bottom bar which includes the volume, play, and stop buttons */
+/* This is the first or leftmost section for the bottom bar */
+#bottomNav {
+  border-top: 1px solid #282828;
+  position: absolute;
+  bottom: 0px;
+  height: 100px;
+  width: 100%;
+  background-color: #161616;
+  color: white;
+}
+#botSongInfo {
+  height: 100%;
+  float: left;
+  width: 250px;
+}
+#botImg {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+#botSong {
+  position: absolute;
+  left: 95px;
+  margin-top: 34px;
+  line-height: 90%;
+}
+.artist {
+  font-size: 70%;
+  color: #aaaaaa;
+}
+/* This is the end for the first or leftmost section in the bottom bar */
+
+/* This is the middle center for the bottom bar */
+#playOptions {
+  overflow: visible;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+}
+#playOp {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+.botSVG {
+  width: 25px;
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+  margin-top: 15px;
+}
+#playBar {
+  overflow: visible;
+  margin-top: 5px;
+  height: 50%;
+  width: 100%;
+  padding-left: 27vw;
+}
+.time1 {
+  color: #aaa;
+  float: left;
+  padding-right: 10px;
+  font-size: 80%;
+}
+.time2 {
+  color: #aaa;
+  font-size: 80%;
+  margin-left: 10px;
+}
+#playBar hr {
+  width: 40vw;
+  border: 2px solid #aaaaaa;
+  border-radius: 2px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5.5px;
+}
+/* This is the end of the middle section in the bottom bar */
+
+/* This is the rightmost end of the bottom bar */
+#volumeOptions {
+  float: right;
+  width: 250px;
+}
+#volumeTable {
+  margin-top: 35px;
+}
+#volumeBar {
+  width: 100px;
+  border: 2px solid #aaa;
+  border-radius: 2px;
+}
+/* This is the end of the rightmost end in the bottom bar */
+/* This ends the bottom div area */
